@@ -147,6 +147,10 @@
       "element",
       "app",
       "kebab-case"
-    ]
+    ],
+    "allowShortCircuit": false,
+    "allowTernary": false,
+    "no-unused-expression": false,
+    "no-angle-bracket-type-assertion": false
   }
 }
