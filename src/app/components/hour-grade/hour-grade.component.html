@@ -1,0 +1,21 @@
+<h5>Grade de Atividades</h5>
+<div class="po-row justify-content-center pb-4">
+  <div class="po-md-5">
+    <po-table
+      [p-striped]="true"
+      [p-hide-columns-manager] = "true"
+      [p-columns]="[{property: 'hour', label: 'Horário'}, {property: 'name', label: 'Atividades'}]"
+      [p-items]="itemsTable">
+    </po-table>
+  </div>
+</div>
+
+<div class="po-row pt-4">
+  <div class="po-md-6">
+    <po-gauge
+      p-title="Lotação da academia"
+      p-value="35"
+      [p-ranges]="capacity"
+    ></po-gauge>
+  </div>
+</div>

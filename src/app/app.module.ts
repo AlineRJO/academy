@@ -7,11 +7,13 @@ import {AngularFireModule} from '@angular/fire';
 import {environment} from '../environments/environment';
 import { LoginComponent } from './components/login/login.component';
 import {FormsModule} from '@angular/forms';
+import { HourGradeComponent } from './components/hour-grade/hour-grade.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    HourGradeComponent
   ],
   imports: [
     BrowserModule,
