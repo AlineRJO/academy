@@ -37,10 +37,7 @@ export class LoginComponent implements OnDestroy {
 
   findUser(name: string): any {
     this.loginService.getById(name).pipe(takeWhile(() => this.listener$))
-      .subscribe(() => {
-      // TODO: DIRECIONAR
-      // this.router.navigateByUrl('choice');
-    });
+      .subscribe(() => this.router.navigateByUrl('grade'));
   }
 
   newLogin(): void {
